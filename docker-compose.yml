@@ -11,4 +11,5 @@ services:
       EULA: "TRUE"
       TYPE: "PURPUR"
     volumes:
-      - ./data:/data
+      - ./plugins:/data/plugins
+      - ./mods:/data/mods
