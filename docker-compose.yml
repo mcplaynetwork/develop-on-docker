@@ -11,6 +11,10 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PURPUR"
+      ALLOW_NETHER: "false"
+      ONLINE_MODE: "false"
+      OPS: |
+        viasnake
     volumes:
       - ./plugins:/plugins
       - ./mods:/mods
