@@ -15,6 +15,7 @@ services:
       ONLINE_MODE: "false"
       OPS: |
         viasnake
+      VERSION: "1.19.4"
     volumes:
       - ./plugins:/plugins
       - ./mods:/mods
