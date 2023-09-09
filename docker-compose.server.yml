@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  mc:
+  server:
     image: itzg/minecraft-server
-    container_name: mc
+    container_name: server
     tty: true
     stdin_open: true
     ports:
@@ -12,12 +12,9 @@ services:
       EULA: "TRUE"
       TYPE: "PURPUR"
       ALLOW_NETHER: "false"
-      ONLINE_MODE: "false"
+      ONLINE_MODE: "true"
       # OPS: |
       #   viasnake
-      VERSION: "1.19.4"
+      VERSION: "1.20.1"
     volumes:
-      - ./plugins:/plugins
-      - ./mods:/mods
-      - ./config:/config
-      - ./data:/data
+      - ./server:/data

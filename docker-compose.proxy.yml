@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  proxy:
+    image: itzg/bungeecord
+    container_name: proxy
+    ports:
+      - "25577:25577"
+    environment:
+      TYPE: "VELOCITY"
+    volumes:
+      - ./proxy:/server
